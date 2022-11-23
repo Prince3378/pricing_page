@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 24px;
+
+  @include onTablet {
+    padding: 36px 50px;
+  }
+
+  &__menu {
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+
+  &__button {
+    padding: 10px 30px;
+    color: $colorWhite;
+    text-decoration: none;
+    border-radius: 25px;
+    background-color: $colorLightViolet;
+    transition: all 0.3s;
+
+    @include onTablet {
+      display: block;
+    }
+
+    &:hover {
+      background-color: $colorLightVioletHover;
+    }
+  }
+}

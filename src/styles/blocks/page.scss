@@ -1,0 +1,90 @@
+.page {
+  &__title {
+    font-size: 40px;
+    color: $colorDarkViolet;
+  }
+
+  &__body {
+    flex-direction: column;
+    margin-bottom: 75px;
+
+    @include onTablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &--description {
+      width: 100%;
+      margin: 0 0 37px 0;
+      font-size: 15px;
+      font-weight: 500;
+      color: $colorDescription;
+
+      @include onTablet {
+        width: 70%;
+        margin: 0;
+      }
+    }
+
+    &--buttons {
+      display: flex;
+      justify-content: center;
+
+      @include onTablet {
+        display: flex;
+      }
+    }
+
+    &--btn {
+      height: 100%;
+      padding: 13px 24px;
+      font-size: 12px;
+      color: #3B3472;;
+      background-color: white;
+      border-radius: 22px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        color: white;
+        background-color: $colorLightViolet;
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 16px 0;
+    margin-bottom: 55px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.64);
+
+    @include onTablet {
+      flex-direction: row;
+      padding: 30px 28px 0;
+    }
+    @include onDesktop {
+      padding: 40px 68px 0;
+    }
+  }
+}
+
+.active-btn {
+  color: $colorWhite;
+  border-radius: 22px;
+  background-color: $colorLightViolet;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $colorLightVioletHover;
+  }
+}
+
+.buttons--container {
+  background-color: white;
+  border-radius: 22px;
+}

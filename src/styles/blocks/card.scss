@@ -1,0 +1,150 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  &--bg {
+    position: absolute;
+    z-index: -1;
+    height: 120%;
+    width: 100%;
+    top: -60px;
+    right: -4px;
+    margin: 0 auto;
+    background-color: $colorDarkViolet;
+    border-radius: 26px;
+    box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.295755);
+
+    @include onTablet {
+      width: 125%;
+      right: -17px;
+    }
+
+    @include onDesktop {
+      width: 125%;
+      right: -27px;
+    }
+  }
+
+  &__container {
+    margin: 0 auto;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &--main {
+      margin: 0;
+      font-size: 36px;
+      font-weight: 700;
+      color: $colorDarkViolet;
+
+      &-active {
+        color: white;
+      }
+    }
+
+    &--month {
+      margin: 0;
+      font-size: 17px;
+      color: $colorDescription;
+
+      &-active {
+        color: white;
+      }
+    }
+  }
+
+  &__name {
+    margin: 0 0 6px 0;
+    font-size: 28px;
+    color: $colorDarkViolet;
+
+    &-active {
+      color: white;
+    }
+  }
+
+  &__description {
+    margin-bottom: 14px;
+    color: $colorDescription;
+
+    &-active {
+      color: white;
+    }
+  }
+
+  &__privilege {
+    padding: 0;
+    margin-bottom: 21px;
+    color: $colorDescription;
+    list-style: none;
+
+    &-active {
+      color: white;
+    }
+
+    &--item {
+      display: flex;
+      margin-bottom: 11px;
+    }
+
+    &--img {
+      padding-right: 10px;
+    }
+  }
+
+  &__btn {
+    padding: 11px 55px;
+    margin: 0 auto;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    background-color: $colorDarkViolet;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $colorLightVioletHover;
+    }
+
+    &-active {
+      background-color: $colorLightViolet;
+    }
+  }
+
+  &--active {
+    position: relative;
+    z-index: 2;
+    margin-top: 115px;
+
+    @include onTablet {
+      margin-top: 0;
+    }
+
+    @include onDesktop {
+      margin-top: 0;
+    }
+
+    &-pop {
+      position: absolute;
+      padding: 7px 16px;
+      margin: 20px 30px;
+      top: -15%;
+      right: 0%;
+      font-size: 10px;
+      font-weight: 800;
+      color: $colorLightViolet;
+      background-color: #403879;
+      border-radius: 13.5px;
+
+      @include onTablet {
+        top: -15%;
+        right: -10%;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import './utils/mixins';
+@import './utils/variables';
+
+@import './blocks/container.scss';
+@import './blocks/header.scss';
+@import './blocks/page.scss';
+@import './blocks/card.scss';
+
+* {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  background: linear-gradient(#F5F5FA, #F2DAD5, #A1ABD6);
+}

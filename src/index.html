@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing page</title>
+  <link rel="icon" href="./images/Group.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <a href="#">
+        <img
+          class="header__menu"
+          src="./images/burger.svg" 
+          alt="burger menu"
+        >
+      </a>
+      <a href="#">
+        <img src="./images/logo.svg" alt="Logo">
+      </a>
+      <a class="header__button" href="#" hidden>
+        Join Now
+      </a>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <section>
+        <h1 class="page__title">Plans & Pricing</h1>
+        <div class="page__body">
+          <p class="page__body--description">
+            Whether your time-saving automation needs are large or small, we're here to help you scale.
+          </p>
+          <div class="page__body--buttons">
+            <div class="buttons--container">
+              <button class="page__body--btn active-btn" id="monthly">
+                MONTHLY
+              </button>
+              <button class="page__body--btn" id="yearly">
+                YEARLY
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="page__cards">
+          <div class="card">
+            <div class="card__container">
+              <div class="card__price">
+                <h1 class="card__price--main" id="low">$19</h1>
+                <p class="card__price--month">/month</p>
+              </div>
+              <div class="card__name">
+                Starter
+              </div>
+              <div class="card__description">
+                Unleash the power of <br/> automation.
+              </div>
+
+              <ul class="card__privilege">
+                <li class="card__privilege--item">
+                  <img
+                    class="card__privilege--img"
+                    src="./images/check_circle_light.svg"
+                    alt="check_circle_light"
+                  >
+                  Multi-step Zaps
+                </li>
+                <li class="card__privilege--item">
+                  <img
+                    class="card__privilege--img"
+                    src="./images/check_circle_light.svg"
+                    alt="check_circle_light"
+                  >
+                  3 Premium Apps
+                </li>
+                <li class="card__privilege--item">
+                  <img
+                    class="card__privilege--img"
+                    src="./images/check_circle_light.svg"
+                    alt="check_circle_light"
+                  >
+                  2 Users team
+                </li>
+              </ul>
+            </div>
+            <button class="card__btn">
+              Choose plan
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="card__container">
+              <div class="card__price">
+                <h1 class="card__price--main" id="middle">$54</h1>
+                <p class="card__price--month">/month</p>
+              </div>
+              <div class="card__name">
+                Professional
+              </div>
+              <div class="card__description">
+                Advanced tools to take your <br/> work to the next level.
+              </div>
+
+              <ul class="card__privilege">
+                <li class="card__privilege--item">
+                  <img
+                    class="card__privilege--img"
+                    src="./images/check_circle_light.svg"
+                    alt="check_circle_light"
+                  >
+                  Multi-step Zaps
+                </li>
+                <li class="card__privilege--item">
+                  <img
+                    class="card__privilege--img"
+                    src="./images/check_circle_light.svg"
+                    alt="check_circle_light"
+                  >
+                  Unlimited Premium
+                </li>
+                <li class="card__privilege--item">
+                  <img
+                    class="card__privilege--img"
+                    src="./images/check_circle_light.svg"
+                    alt="check_circle_light"
+                  >
+                  50 Users team
+                </li>
+                <li class="card__privilege--item">
+                  <img
+                    class="card__privilege--img"
+                    src="./images/check_circle_light.svg"
+                    alt="check_circle_light"
+                  >
+                  Shared Workspace
+                </li>
+              </ul>
+            </div>
+            <button class="card__btn">
+              Choose plan
+            </button>
+          </div>
+
+            <div class="card card--active">
+              <div class="card--bg"></div>
+              <div class="card--active-pop">
+                MOST POPULAR
+              </div>
+              <div class="card__container">
+                <div class="card__price">
+                  <h1
+                    class="card__price--main card__price--main-active"
+                    id="high"
+                  >
+                    $89
+                  </h1>
+                  <p class="card__price--month card__price--month-active">/month</p>
+                </div>
+                <div class="card__name card__name-active">
+                  Company
+                </div>
+                <div class="card__description card__description-active">
+                  Automation plus enterprise-<br/>grade features.
+                </div>
+
+                <ul class="card__privilege card__privilege-active">
+                  <li class="card__privilege--item">
+                    <img
+                      class="card__privilege--img"
+                      src="./images/check_circle_white.svg"
+                      alt="check_circle_white"
+                    >
+                    Multi-step Zaps
+                  </li>
+                  <li class="card__privilege--item">
+                    <img
+                      class="card__privilege--img"
+                      src="./images/check_circle_white.svg"
+                      alt="check_circle_white"
+                    >
+                    Unlimited Premium
+                  </li>
+                  <li class="card__privilege--item">
+                    <img
+                      class="card__privilege--img"
+                      src="./images/check_circle_white.svg"
+                      alt="check_circle_white"
+                    >
+                    Unlimited Users Team
+                  </li>
+                  <li class="card__privilege--item">
+                    <img
+                      class="card__privilege--img"
+                      src="./images/check_circle_white.svg"
+                      alt="check_circle_white"
+                    >
+                    Advanced Admin
+                  </li>
+                  <li class="card__privilege--item">
+                    <img
+                      class="card__privilege--img"
+                      src="./images/check_circle_white.svg"
+                      alt="check_circle_white"
+                    >
+                    Custom Data Retention
+                  </li>
+                </ul>
+              </div>
+              <button class="card__btn card__btn-active">
+                Choose plan
+              </button>
+            </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+<script src="./main.js"></script>
+</html>
