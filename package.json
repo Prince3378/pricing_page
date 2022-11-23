@@ -1,0 +1,13 @@
+{
+  "name": "pricing_page",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://Prince3378.github.io/pricing_page",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "html-build": "^1.0.1"
+  }
+}
